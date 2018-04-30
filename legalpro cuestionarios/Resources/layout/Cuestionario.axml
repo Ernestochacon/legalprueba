@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoa2"
+    android:id="@+id/relativeLayout1"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="250dp"
+        android:layout_height="97dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/nube"
+        android:tint="@android:color/background_light" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/logolegalpro" />
+    <ImageView
+        android:id="@+id/siguiente"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/siguiente" />
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="61dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/pajara" />
+    <ImageView
+        android:id="@+id/guardar"
+        android:layout_width="61dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/guardar" />
+    <ImageView
+        android:id="@+id/g_nube"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/ok" />
+    <TextView
+        android:id="@+id/terminado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="120dp"
+        android:textColor="#000"
+        android:text="TERMINAR" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="55dp"
+        android:textColor="#000"
+        android:text="Rocio.ceballos" />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="150dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/cuadrito">
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listam"
+            android:divider="#b7e8d2"
+            android:dividerHeight="5dp" />
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listaa"
+            android:divider="#b7e8d2"
+            android:dividerHeight="5dp"
+            android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:id="@+id/fotolayout"
+        android:weightSum="12"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:id="@+id/imageViewfoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            android:layout_weight="8" />
+        <Button
+            android:keepScreenOn="true"
+            android:id="@+id/buttonc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tomar foto"
+            android:layout_weight="1" />
+        <Button
+            android:keepScreenOn="true"
+            android:id="@+id/buttonf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Archivo en el celular"
+            android:layout_weight="1" />
+      <Button
+            android:keepScreenOn="true"
+            android:id="@+id/buttona"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aceptar"
+            android:layout_weight="1" />
+        <Button
+            android:keepScreenOn="true"
+            android:id="@+id/buttonx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cancelar"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>
